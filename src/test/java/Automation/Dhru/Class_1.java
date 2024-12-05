@@ -42,7 +42,7 @@ public class Class_1 {
          }
          
        
-           //added in cart
+          //added in cart
          driver.findElement(By.xpath("//img[@alt='Cart']")).click();
          driver.findElement(By.xpath("//button [text()='PROCEED TO CHECKOUT']")).click();
          Thread.sleep(2000);
@@ -53,21 +53,6 @@ public class Class_1 {
          driver.findElement(By.xpath("//button[@class='promoBtn']")).click();
          Thread.sleep(2000);
        
-//         
-//         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//         WebElement successMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(
-//             By.cssSelector(".promoInfo") // Adjust the selector if necessary
-//         ));
-//
-//         // Verify and print the success message
-//         String messageText = successMessage.getText();
-//         System.out.println("Promo Code Message: " + messageText);
-//
-//         if (messageText.equals("Code applied ..!")) {
-//             System.out.println("Promo code applied successfully.");
-//         } else {
-//             System.out.println("Promo code application failed.");
-//         }
          
           WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
           WebElement Successmessage = wait.until(ExpectedConditions.visibilityOfElementLocated( By.cssSelector(".promoInfo")));
