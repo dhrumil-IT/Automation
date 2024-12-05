@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
@@ -64,10 +65,23 @@ public class Class_1 {
         	  System.out.println("Promo code is applied succesfully..");
           }else
         	  System.out.println("Promo code is applied failed");
-        	  
+        	
+          
+          driver.findElement(By.xpath("//button[text()='Place Order']")).click();
+          
+         Select s1 = new Select (driver.findElement(By.xpath("//select[@style='width: 200px;']")));
+         s1.selectByVisibleText("Albania");
+          
+          driver.findElement(By.xpath("//input[@type='checkbox']")).click();
+          
+          driver.findElement(By.linkText("Terms & Conditions")).click();
+          
+      driver.navigate().back();
+      
+          
           }
            
-     
+         
         
 	}
 
