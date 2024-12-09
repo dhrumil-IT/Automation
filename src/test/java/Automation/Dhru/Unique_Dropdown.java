@@ -18,11 +18,12 @@ public class Unique_Dropdown {
 		Thread.sleep(2000);
 		
 		
-		for (int i=0; i<5;i++) 
+		for (int i=1; i<5;i++) 
 		{
 		
 		
 			driver.findElement(By.id("hrefIncAdt")).click();
+			System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
 		
 		
 	     }
