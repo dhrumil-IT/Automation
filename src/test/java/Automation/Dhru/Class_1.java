@@ -29,7 +29,6 @@ public class Class_1 {
          Thread.sleep(2000);
          
          //List of Products
-         
          List<WebElement> products = driver.findElements(By.cssSelector(".products .product"));
          Thread.sleep(2000);
          
