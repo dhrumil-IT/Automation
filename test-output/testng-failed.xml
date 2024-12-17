@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Automation.Dhru.Loc_Dropdown">
+      <class name="Automation.Dhru.Kyobee">
         <methods>
           <include name="test"/>
+          <include name="beforetest"/>
         </methods>
-      </class> <!-- Automation.Dhru.Loc_Dropdown -->
+      </class> <!-- Automation.Dhru.Kyobee -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
