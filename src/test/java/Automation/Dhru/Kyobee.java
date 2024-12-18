@@ -51,9 +51,19 @@ public class Kyobee {
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//button[text()='SAVE']")).sendKeys(Keys.CONTROL, Keys.END);
 		driver.findElement(By.xpath("//button[text()='SAVE']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("firstName")).sendKeys("rituuu");
+		driver.findElement(By.id("lastName")).sendKeys("rituuuu");
+		driver.findElement(By.id("userName")).sendKeys("OrdexxTechnoo");
+		driver.findElement(By.id("email")).sendKeys("ritu3334@yopmail.com");
+		driver.findElement(By.id("password")).sendKeys("Ordex3@123");
+		driver.findElement(By.id("confPassword")).sendKeys("Ordex3@123");
+		Thread.sleep(2000);
+		driver.findElement(By.cssSelector(".btn.btn-primary.shadow.px-4.scrollToTop")).click();
+		Thread.sleep(2000);
+		
 
-		
-		
+
 		
 		}
 	
